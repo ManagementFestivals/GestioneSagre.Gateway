@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  gestionesagre-gateway:
+    container_name: gateway
+    restart: always
+    build:
+      context: .
+      dockerfile: src/GestioneSagre.Gateway/Dockerfile
+    ports:
+      - 8050:5001
+    networks:
+      - lan-network
+
+networks:
+  lan-network:
+    external:
+      name: docker-net

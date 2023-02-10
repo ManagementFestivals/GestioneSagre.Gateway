@@ -1,0 +1,17 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/home/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/helloworld/",
+            "UpstreamHttpMethod": [ "Get" ]
+        }
+    ],
+    "GlobalConfiguration": {}
+}
