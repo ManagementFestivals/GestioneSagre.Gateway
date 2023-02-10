@@ -5,8 +5,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 80
+                    "Host": "172.17.0.1",
+                    "Port": 8050
                 }
             ],
             "UpstreamPathTemplate": "/helloworld/",
