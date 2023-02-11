@@ -11,6 +11,66 @@
             ],
             "UpstreamPathTemplate": "/helloworld/",
             "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/utility/gettipocliente",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "172.17.0.1",
+                    "Port": 8051
+                }
+            ],
+            "UpstreamPathTemplate": "/gettipocliente",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/utility/gettiposcontrino",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "172.17.0.1",
+                    "Port": 8051
+                }
+            ],
+            "UpstreamPathTemplate": "/gettiposcontrino",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/utility/gettipopagamento",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "172.17.0.1",
+                    "Port": 8051
+                }
+            ],
+            "UpstreamPathTemplate": "/gettipopagamento",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/utility/getscontrinopagato",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "172.17.0.1",
+                    "Port": 8051
+                }
+            ],
+            "UpstreamPathTemplate": "/getscontrinopagato",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/utility/getscontrinostato",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "172.17.0.1",
+                    "Port": 8051
+                }
+            ],
+            "UpstreamPathTemplate": "/getscontrinostato",
+            "UpstreamHttpMethod": [ "Get" ]
         }
     ],
     "GlobalConfiguration": {}
