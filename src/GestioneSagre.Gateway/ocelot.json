@@ -5,8 +5,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.1",
-                    "Port": 8050
+                    "Host": "gateway",
+                    "Port": 5001
                 }
             ],
             "UpstreamPathTemplate": "/helloworld/",
@@ -17,8 +17,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.1",
-                    "Port": 8051
+                    "Host": "utility",
+                    "Port": 5001
                 }
             ],
             "UpstreamPathTemplate": "/gettipocliente",
@@ -29,8 +29,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.1",
-                    "Port": 8051
+                    "Host": "utility",
+                    "Port": 5001
                 }
             ],
             "UpstreamPathTemplate": "/gettiposcontrino",
@@ -41,8 +41,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.1",
-                    "Port": 8051
+                    "Host": "utility",
+                    "Port": 5001
                 }
             ],
             "UpstreamPathTemplate": "/gettipopagamento",
@@ -53,8 +53,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.1",
-                    "Port": 8051
+                    "Host": "utility",
+                    "Port": 5001
                 }
             ],
             "UpstreamPathTemplate": "/getscontrinopagato",
@@ -65,8 +65,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.1",
-                    "Port": 8051
+                    "Host": "utility",
+                    "Port": 5001
                 }
             ],
             "UpstreamPathTemplate": "/getscontrinostato",
