@@ -71,6 +71,30 @@
             ],
             "UpstreamPathTemplate": "/getscontrinostato",
             "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/autenticazione/login",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "autenticazione",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/login",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/autenticazione/refresh",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "autenticazione",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/refresh",
+            "UpstreamHttpMethod": [ "Post" ]
         }
     ],
     "GlobalConfiguration": {}
