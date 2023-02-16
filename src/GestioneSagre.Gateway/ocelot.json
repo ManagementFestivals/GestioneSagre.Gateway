@@ -77,7 +77,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "autenticazione",
+                    "Host": "yarp-auth",
                     "Port": 5001
                 }
             ],
@@ -89,7 +89,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "autenticazione",
+                    "Host": "yarp-auth",
                     "Port": 5001
                 }
             ],
