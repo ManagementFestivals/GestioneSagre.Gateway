@@ -17,7 +17,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "utility",
+                    "Host": "yarp-utility",
                     "Port": 5001
                 }
             ],
@@ -29,7 +29,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "utility",
+                    "Host": "yarp-utility",
                     "Port": 5001
                 }
             ],
@@ -41,7 +41,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "utility",
+                    "Host": "yarp-utility",
                     "Port": 5001
                 }
             ],
@@ -53,7 +53,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "utility",
+                    "Host": "yarp-utility",
                     "Port": 5001
                 }
             ],
@@ -65,7 +65,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "utility",
+                    "Host": "yarp-utility",
                     "Port": 5001
                 }
             ],
