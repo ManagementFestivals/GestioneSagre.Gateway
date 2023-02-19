@@ -95,6 +95,18 @@
             ],
             "UpstreamPathTemplate": "/refresh",
             "UpstreamHttpMethod": [ "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/email/sendemail",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "yarp-email",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/sendemail",
+            "UpstreamHttpMethod": [ "Post" ]
         }
     ],
     "GlobalConfiguration": {}
