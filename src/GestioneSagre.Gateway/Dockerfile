@@ -2,8 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS base
 WORKDIR /webapp
 
 FROM base as deps
-COPY src/GestioneSagre.Gateway/*.csproj .
-COPY src/GestioneSagre.Gateway/ocelot.json .
+COPY . .
 RUN dotnet restore
 
 FROM deps as build
