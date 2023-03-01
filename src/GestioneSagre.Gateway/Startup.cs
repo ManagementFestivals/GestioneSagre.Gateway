@@ -1,8 +1,4 @@
-﻿using Microsoft.OpenApi.Models;
-using Ocelot.DependencyInjection;
-using Ocelot.Middleware;
-
-namespace GestioneSagre.Gateway;
+﻿namespace GestioneSagre.Gateway;
 
 public class Startup
 {
