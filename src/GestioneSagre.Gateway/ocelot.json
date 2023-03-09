@@ -22,7 +22,11 @@
                 }
             ],
             "UpstreamPathTemplate": "/gettipocliente",
-            "UpstreamHttpMethod": [ "Get" ]
+            "UpstreamHttpMethod": [ "Get" ],
+            "AuthenticationOptions": {
+              "AuthenticationProviderKey": "AuthenticationSchemeValue-AppSettings.json",
+              "AllowedScopes": []
+            }
         },
         {
             "DownstreamPathTemplate": "/api/utility/gettiposcontrino",
@@ -34,7 +38,11 @@
                 }
             ],
             "UpstreamPathTemplate": "/gettiposcontrino",
-            "UpstreamHttpMethod": [ "Get" ]
+            "UpstreamHttpMethod": [ "Get" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "AuthenticationSchemeValue-AppSettings.json",
+                "AllowedScopes": []
+            }
         },
         {
             "DownstreamPathTemplate": "/api/utility/gettipopagamento",
@@ -46,7 +54,11 @@
                 }
             ],
             "UpstreamPathTemplate": "/gettipopagamento",
-            "UpstreamHttpMethod": [ "Get" ]
+            "UpstreamHttpMethod": [ "Get" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "AuthenticationSchemeValue-AppSettings.json",
+                "AllowedScopes": []
+            }
         },
         {
             "DownstreamPathTemplate": "/api/utility/getscontrinopagato",
@@ -58,7 +70,11 @@
                 }
             ],
             "UpstreamPathTemplate": "/getscontrinopagato",
-            "UpstreamHttpMethod": [ "Get" ]
+            "UpstreamHttpMethod": [ "Get" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "AuthenticationSchemeValue-AppSettings.json",
+                "AllowedScopes": []
+            }
         },
         {
             "DownstreamPathTemplate": "/api/utility/getscontrinostato",
@@ -70,7 +86,11 @@
                 }
             ],
             "UpstreamPathTemplate": "/getscontrinostato",
-            "UpstreamHttpMethod": [ "Get" ]
+            "UpstreamHttpMethod": [ "Get" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "AuthenticationSchemeValue-AppSettings.json",
+                "AllowedScopes": []
+            }
         },
         {
             "DownstreamPathTemplate": "/api/autenticazione/login",

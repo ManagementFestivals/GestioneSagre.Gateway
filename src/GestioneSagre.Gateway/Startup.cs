@@ -22,9 +22,7 @@ public class Startup
             });
         });
 
-        services.AddOcelot();
         services.AddEndpointsApiExplorer();
-
         services.AddSwaggerGen(config =>
         {
             config.SwaggerDoc("v1", new OpenApiInfo
@@ -33,6 +31,37 @@ public class Startup
                 Version = "v1"
             });
         });
+
+        var issuer = Configuration.GetSection("JwtSettings").GetValue<string>("Issuer");
+        var audience = Configuration.GetSection("JwtSettings").GetValue<string>("Audience");
+        var securityKey = Configuration.GetSection("JwtSettings").GetValue<string>("SecurityKey");
+        var authSchema = Configuration.GetSection("JwtSettings").GetValue<string>("AuthenticationScheme");
+
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(authSchema, options =>
+        {
+            options.SaveToken = true;
+            options.RequireHttpsMetadata = false;
+            options.TokenValidationParameters = new TokenValidationParameters()
+            {
+                ValidateIssuer = true,
+                ValidIssuer = issuer,
+                ValidateAudience = true,
+                ValidAudience = audience,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey)),
+                RequireExpirationTime = true,
+                ClockSkew = TimeSpan.Zero
+            };
+        });
+
+        services.AddOcelot(Configuration);
     }
 
     public void Configure(WebApplication app)
